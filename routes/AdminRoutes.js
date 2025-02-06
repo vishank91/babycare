@@ -124,7 +124,7 @@ AdminRouter.get("/service/edit/:_id", isLogin, editService)
 AdminRouter.post("/service/update/:_id", isLogin, servicesUploader.single("cover"), encoder, updateService)
 AdminRouter.get("/service/delete/:_id", isSuperAdmin, deleteService)
 AdminRouter.get("/service/show/:_id", isLogin, showService)
-
+ 
 AdminRouter.get("/program", isLogin, homeProgram)
 AdminRouter.get("/program/create", isLogin, createProgram)
 AdminRouter.post("/program/store", isLogin, programsUploader.single("cover"), encoder, storeProgram)
